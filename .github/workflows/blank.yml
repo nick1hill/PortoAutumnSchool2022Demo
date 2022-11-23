@@ -30,7 +30,7 @@ jobs:
       - name: Check DITA OT version
         run: dita --version
       - name: Build PDF
-        run: dita -i taskbook.ditamap -o /out -f pdf --args.output.base="Taskbook"
+        run: dita -i taskbook.ditamap -o out -f pdf --args.output.base="Taskbook"
       - name: Store PDFs release 1.8
         uses: actions/upload-artifact@v2
         with:
