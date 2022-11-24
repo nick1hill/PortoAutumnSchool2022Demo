@@ -31,7 +31,8 @@ jobs:
           sudo apt install aspell-en
       - name: Run aspell on a file
         run: aspell -c taskbook/closeprograms.dita > spell-check-results.txt
-        ls
+      - name: Check status
+        run: ls
       - name: Store spell check results
         uses: actions/upload-artifact@v2
         with:
