@@ -19,6 +19,11 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: scripts
+    
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -31,10 +36,8 @@ jobs:
           sudo apt install aspell-en
       - name: Run aspell on a file
         run: aspell -c taskbook/closeprograms.dita > spell-check-results.txt
-        shell: bash
       - name: Check status
         run: ls
-        shell: bash
       - name: Store spell check results
         uses: actions/upload-artifact@v2
         with:
