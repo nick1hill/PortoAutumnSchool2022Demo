@@ -30,4 +30,4 @@ jobs:
           sudo apt update
           sudo apt install aspell
           sudo apt install aspell-en
-          sudo aspell check taskbook/closeprograms.dita
+          sudo aspell -c taskbook/closeprograms.dita
