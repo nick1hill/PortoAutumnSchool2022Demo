@@ -30,9 +30,9 @@ jobs:
       - name: Check DITA OT version
         run: dita --version
       - name: Build PDF
-        run: dita -i taskbook.ditamap -o out -f pdf --args.output.base="Taskbook"
-      - name: Store PDFs release 1.8
+        run: dita -i taskbook.ditamap -o out -f html5
+      - name: Store HTML
         uses: actions/upload-artifact@v2
         with:
-          name: pdf-output
-          path: out/*.pdf
+          name: html-output
+          path: out/*.html
