@@ -9,7 +9,6 @@ This repo also has an Apache License 2.0.
 This repo has the following GitHub Actions:
 
 - Docker-based DITA Open Toolkit build of the source files into uncustomized PDF
-- Docker-based Aspell check of spelling in one file
 
 ## Contents of this repo
 
@@ -19,4 +18,4 @@ taskbook.ditamap - ditamap used as input for building the documentation.
   - taskbook - folder with the dita files required for the document
   - .github 
     - workflows
-      - blank.yml -YAML file that provides instructions for the GitHub Action used to build the PDF
+      - buildPDF.yml -YAML file that provides instructions for the GitHub Action used to build the PDF
