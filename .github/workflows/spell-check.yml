@@ -31,9 +31,9 @@ jobs:
           sudo apt install aspell
           sudo apt install aspell-en
       - name: Run aspell on a file
+      - shell: bash {0}
         run: aspell -c taskbook/closeprograms.dita > spell-check-results.txt
         if: always()
-        shell: bash {0}
       - name: Check status
         run: ls
       - name: Store spell check results
