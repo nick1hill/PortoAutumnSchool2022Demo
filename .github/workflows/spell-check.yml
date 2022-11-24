@@ -25,10 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: check out repo
         uses: actions/checkout@v3
-      - name: install aspell
+      - name: install and run aspell
         run: |
           sudo apt update
           sudo apt install aspell
           sudo apt install aspell-en
-      - name: Run spell check on a file
-        run: aspell check taskbook/closeprograms.dita
+          sudo aspell check taskbook/closeprograms.dita
