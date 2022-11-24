@@ -28,4 +28,4 @@ jobs:
       - name: check out repo
         uses: actions/checkout@v3
       - name: Run spell check on a file
-        run: docker run --rm -v taskbook starefossen/aspell -c taskbook/closeprograms.dita
+        run: aspell -c taskbook/closeprograms.dita
