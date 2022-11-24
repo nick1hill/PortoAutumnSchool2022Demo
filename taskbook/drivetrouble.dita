@@ -16,7 +16,7 @@
   <taskbody>
     <steps-unordered>
       <step>
-        <cmd>Run scandisk on the drive. This may solve all of your problems.</cmd>
+        <cmd>Run scan on the drive. This may solve all of your problems.</cmd>
       </step>
       <step>
         <cmd>Try defragmenting the drive. This could help with retrieval times.</cmd>
