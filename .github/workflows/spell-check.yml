@@ -28,4 +28,4 @@ jobs:
       - name: check out repo
         uses: actions/checkout@v3
       - name: Run spell check on a file
-        run: aspell check -mode=sgml taskbook/closeprograms.dita
+        run: aspell check taskbook/closeprograms.dita
