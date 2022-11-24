@@ -31,6 +31,7 @@ jobs:
         uses: actions/checkout@v3
       - name: install aspell
         run: |
+          mkdir scripts
           sudo apt update
           sudo apt install aspell
           sudo apt install aspell-en
