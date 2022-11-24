@@ -17,7 +17,7 @@
   <taskbody>
     <steps>
       <step>
-        <cmd>If you are on a Windows system, click the X in the corner of each program.</cmd>
+        <cmd>If you are on a Windows syste, click the X in the corner of each program.</cmd>
       </step>
       <step>
         <cmd>If you are on a Linux system, type kill -9 [PID] for each of your programs. </cmd>
