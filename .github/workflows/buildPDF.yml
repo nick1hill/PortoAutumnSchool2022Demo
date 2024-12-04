@@ -32,7 +32,7 @@ jobs:
       - name: Build PDF
         run: dita -i taskbook.ditamap -o out -f html5
       - name: Store HTML
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: html-output
           path: out/*.html
